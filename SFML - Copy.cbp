@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SFML" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="../SFML" />
+					<Add directory="include/UI" />
+					<Add directory="include/States" />
+					<Add directory="include/Entity" />
+					<Add directory="include/Components" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="../SFML" />
+					<Add directory="include/UI" />
+					<Add directory="include/States" />
+					<Add directory="include/Entity" />
+					<Add directory="include/Components" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="include/Components/AnimationComponent.h" />
+		<Unit filename="include/Components/MovementComponent.h" />
+		<Unit filename="include/Entity/Diamond.h" />
+		<Unit filename="include/Entity/Entity.h" />
+		<Unit filename="include/Entity/Player.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/States/CreditsState.h" />
+		<Unit filename="include/States/GameState.h" />
+		<Unit filename="include/States/MainMenuState.h" />
+		<Unit filename="include/States/State.h" />
+		<Unit filename="include/UI/Button.h" />
+		<Unit filename="include/UI/PauseMenu.h" />
+		<Unit filename="include/UI/TextTagSystem.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Components/MovementComponent.cpp" />
+		<Unit filename="src/Entity/Diamond.cpp" />
+		<Unit filename="src/Entity/Entity.cpp" />
+		<Unit filename="src/Entity/Player.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/States/CreditsState.cpp" />
+		<Unit filename="src/States/GameState.cpp" />
+		<Unit filename="src/States/MainMenuState.cpp" />
+		<Unit filename="src/States/State.cpp" />
+		<Unit filename="src/UI/Button.cpp" />
+		<Unit filename="src/UI/PauseMenu.cpp" />
+		<Unit filename="src/UI/TextTagSystem.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
