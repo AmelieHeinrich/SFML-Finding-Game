@@ -1,9 +1,2 @@
-
-res/sprites/Individual Sprites/adventurer-fall-00.png
-res/sprites/Individual Sprites/adventurer-fall-01.png
-res/sprites/Individual Sprites/adventurer-hurt-00.png
-res/sprites/Individual Sprites/adventurer-hurt-01.png
-res/sprites/Individual Sprites/adventurer-hurt-02.png
-
-Out/
-CMakeSettings.json
+bin
+SFML-2.5.1
